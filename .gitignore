@@ -1,5 +1,10 @@
+# Bloqueia absolutamente tudo na pasta atual por padrão
 *
+
+# Permite que o Git acompanhe apenas o próprio arquivo .gitignore
 !.gitignore
-!*.cpp
-!*.py
-!*.java
+
+# Diz ao Git para ignorar tudo o que já existe dentro dessas pastas
+Java/**
+C++/**
+Python/**

@@ -1,13 +1,11 @@
 # Bloqueia tudo na raiz por padrão
 *
-
-# Permite o próprio arquivo .gitignore
 !.gitignore
 
-# PERMITE A PASTA PYTHON E TUDO DENTRO DELA
+# Permite as pastas principais
 !Python/
-!Python/**
+!c++/
 
-# Diz ao Git para ignorar tudo dentro das outras pastas
-Java/**
-C++/**
+# Ignora executáveis e pastas de saída em qualquer lugar
+*.exe
+output/

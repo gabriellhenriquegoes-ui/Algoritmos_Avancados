@@ -7,12 +7,12 @@ int main(){
     string pala;
     cin >> pala;
     for (char &letra : pala) {
-        letra = tolower(static_cast<unsigned char>(letra));
+        letra = tolower(letra);
     }
     string alfa = "abcdefghijklmnopqrstuvwxyz";
     bool tem = true;
     for(char c: alfa){
-        if(pala.find(c) == std::string::npos){
+        if(!pala.contains(c)){
             tem = false;
             break;
         }
